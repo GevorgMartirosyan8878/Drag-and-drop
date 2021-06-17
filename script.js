@@ -13,6 +13,7 @@ placeholders.forEach(placeholder => {
 
 function dragstart(e) {
 	e.target.classList.add('hold');
+	e.target.classList.remove('animate')
 	setTimeout(() => {
 		e.target.classList.add('hide')
 	})
@@ -21,6 +22,7 @@ function dragstart(e) {
 function dragend(e) {
 	e.target.classList.remove('hold');
 	e.target.classList.remove('hide')
+	e.target.classList.add('animate')
 }
 
 function dragover(e) {

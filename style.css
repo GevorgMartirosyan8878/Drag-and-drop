@@ -75,3 +75,28 @@ body {
 	border-radius: 20px;
 	box-shadow: 1px 1px 30px 5px grey;
 }
+
+.animate {
+	animation-name: animate;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes animate {
+	0% {
+		box-shadow: 1px 1px 30px 5px #50C878;
+	}
+	25% {
+		box-shadow: 2px 2px 40px 10px #50C878;
+	}
+	50% {
+		box-shadow: 3px 3px 60px 15px #50C878;
+	}
+	75% {
+		box-shadow: 2px 2px 40px 10px #50C878;
+	}
+	100% {
+		box-shadow: 1px 1px 30px 5px #50C878;
+	}
+}
